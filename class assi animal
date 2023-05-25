@@ -1,0 +1,30 @@
+#include<bits/stdc++.h>
+         using namespace std;
+       
+     class Animal{
+      public:
+     void set_age(int ag){
+      this->age=ag;
+     }
+
+     void set_gender(string gend){
+      this->gender=gend;
+
+     }
+      
+        void print_data(){
+        cout<<this->age<<" "<<this->gender<<" "<<endl;     
+      }
+
+
+     int age;
+     string gender;
+     };
+   int main(){
+      Animal Dog;
+      Dog.set_age(10);
+      Dog.set_gender("male");
+      Dog.print_data();
+      cout<<(Dog.age);
+      return 0;
+         }  
