@@ -1,0 +1,13 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    int fa=1,n,i;
+    cin>>n;
+   cout<<"factorial";
+    for(i=1;i<=n;i++){
+        fa=fa*i;
+    }
+    cout<<fa;
+    return 0;
+}
+   
