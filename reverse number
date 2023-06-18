@@ -1,0 +1,13 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    int rem,s,x;
+    cout<<"reverse number";
+    cin>>x;
+    while(x!=0){
+        rem=x%10;
+        s=s*10+rem;
+        x=x/10;
+    }
+    cout<<s;
+}
