@@ -1,12 +1,26 @@
-#include<bits/stdc++.h>
+include <bits/stdc++.h>
 using namespace std;
-int main(){
-    vector<int> v{1,5,8,9,6,7,3,4,2,0};
-    sort(v.begin() ,v.end());
-    cout<<"shorted";
-    for(auto x:v)
-    cout<<x<<" ";
-    
+ 
 
-   return 0;
+int f(int n) //function declaration
+{
+    
+    if (n<=1) //condition
+        return 1;//1 return1
+        //2 condition fauil
+        //3condition fail
+ 
+    
+    else //recurcive condition
+    //3=3*3-1=int64_tfact of 3!
+        return n * f(n - 1);
+}
+ 
+
+int main() //driver code
+{
+    int n ;
+    cin>>n;
+    cout<<"factorial of "<<n<<" is: "<<f(n);
+    return 0;
 }
